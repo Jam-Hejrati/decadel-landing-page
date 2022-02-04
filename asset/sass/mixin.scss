@@ -1,0 +1,46 @@
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btn {
+  text-decoration: none;
+  font-size: 1.65rem;
+  background-color: #e5585e;
+  color: #fff;
+  width: 70px;
+  height: 15px;
+  border-radius: 4px;
+  padding: 10px 25px;
+}
+
+@mixin news-btn {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  width: 160px;
+  height: 30px;
+  position: absolute;
+  bottom: 3.5%;
+  background-color: #fff;
+  color: #4c4c4c;
+  padding: 22px 25px;
+  border-radius: 1000px;
+}
+
+@mixin arrow-btn {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: $arrow-down-bg;
+  color: $arrow-down-color;
+  transition: transform 0.2s linear;
+}

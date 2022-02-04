@@ -1,0 +1,327 @@
+@import "mixin";
+@import "variables";
+@import url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css");
+
+* {
+  @include reset;
+  direction: rtl;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  body {
+    font-family: "Vazir", sans-serif;
+  }
+}
+
+.icon-logo {
+  height: 100%;
+  width: 100%;
+}
+
+// Header start
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  img {
+    width: 30%;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .arrow-down {
+    @include arrow-btn;
+  }
+  .arrow-down:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+// Header End
+
+// Main Start
+main {
+  padding: 50px 5.5%;
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.6rem;
+    color: $discription-text-color;
+  }
+  .discription-component {
+    @include center;
+    margin-bottom: 50px;
+    .content {
+      margin: 0 20px;
+    }
+    img {
+      box-shadow: 0 5px 10px $shadow-box;
+      width: 35%;
+      border-radius: 36px;
+    }
+  }
+  .section--2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .center-content {
+      margin-right: 50px;
+      p {
+        margin-bottom: 50px;
+      }
+      ul {
+        font-size: 1.6rem;
+      }
+      .second-pragraph {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+    .btn {
+      @include btn;
+    }
+  }
+  .current-record {
+    display: flex;
+    flex-direction: column;
+    @include center;
+    padding: 50px;
+    width: 100%;
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 80%;
+      margin-bottom: 60px;
+    }
+  }
+  .sell-info {
+    @include center;
+    flex-direction: column;
+    margin-bottom: 110px;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    img {
+      width: 80%;
+      border-radius: 40px;
+    }
+    p {
+      width: 80%;
+      text-align: justify;
+    }
+  }
+  .shop-cards {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      border-radius: 40px;
+      transition: transform 0.3s linear;
+      box-shadow: 0 5px 10px $shadow-box;
+      h1 {
+        width: 100%;
+        color: $shop-card-header;
+        font-size: 2rem;
+        padding: 20px 70px;
+        border-radius: 40px 40px 50% 50%;
+        text-align: center;
+      }
+      p {
+        color: $shop-card-content;
+        margin: 20px 0;
+      }
+      .btn {
+        @include btn;
+        width: auto;
+        height: auto;
+        margin: 20px 0 40px 0;
+      }
+    }
+    .free-panel {
+      h1 {
+        background-color: $free-panel-header-bg;
+      }
+    }
+    .bronze-panel {
+      h1 {
+        background-color: $bronze-panel-header-bg;
+      }
+    }
+    .silver-panel {
+      h1 {
+        background-color: $silver-panel-header-bg;
+      }
+    }
+    .gold-panel {
+      h1 {
+        background-color: $gold-panel-header-bg;
+      }
+    }
+    .card:hover {
+      transform: scale(1.017);
+    }
+  }
+  .newsletter-enrolling {
+    @include center;
+    width: 100%;
+    margin-top: 90px;
+    position: relative;
+    img {
+      width: 71%;
+      border-radius: 40px;
+    }
+    a {
+      @include center;
+      @include news-btn;
+    }
+  }
+}
+// End Main
+
+// Footer Start
+footer {
+  @include center;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  border-radius: 50% 50% 0 0;
+  background-color: $footer-bg;
+  .arrow-up {
+    @include arrow-btn;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s linear;
+  }
+  .arrow-up:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+  }
+  .footer-nav {
+    @include center;
+    gap: 40px;
+    a {
+      text-decoration: none;
+      padding: 0 30px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $footer-nav-content;
+    }
+  }
+  img {
+    width: 17%;
+  }
+  p {
+    color: $footer-designer-content;
+    font-size: 1.6rem;
+    font-weight: 400;
+    a {
+      color: blue;
+    }
+    a:focus {
+      color: red;
+    }
+  }
+}
+// Footer End
+
+// Media Queries
+@media (max-width: 1000px) {
+  header {
+    height: 80vh;
+  }
+  main {
+    .discription-component {
+      margin-bottom: 60px;
+      img {
+        width: 50%;
+        margin: 50px 0;
+      }
+      flex-direction: column;
+    }
+    .comp--1 {
+      flex-direction: column-reverse;
+    }
+    .current-record {
+      img {
+        width: 100%;
+      }
+    }
+    .sell-info {
+      img {
+        width: 90%;
+      }
+    }
+    .shop-cards {
+      flex-wrap: wrap;
+    }
+    .newsletter-enrolling {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    .footer-nav {
+      a {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    img {
+      width: 50%;
+    }
+  }
+  main {
+    .shop-cards {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  footer {
+    height: 40vh;
+    .footer-nav {
+      gap: 12px;
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    .footer-nav {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

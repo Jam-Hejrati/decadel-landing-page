@@ -1,0 +1,486 @@
+@import url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: rtl;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-family: "Vazir", sans-serif;
+}
+
+.icon-logo {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 30%;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+header .arrow-down {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+header .arrow-down:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main {
+  padding: 50px 5.5%;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.6rem;
+  color: #7f8183;
+}
+
+main .discription-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+main .discription-component .content {
+  margin: 0 20px;
+}
+
+main .discription-component img {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 35%;
+  border-radius: 36px;
+}
+
+main .section--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .section--2 .center-content {
+  margin-right: 50px;
+}
+
+main .section--2 .center-content p {
+  margin-bottom: 50px;
+}
+
+main .section--2 .center-content ul {
+  font-size: 1.6rem;
+}
+
+main .section--2 .center-content .second-pragraph {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main .section--2 .btn {
+  text-decoration: none;
+  font-size: 1.65rem;
+  background-color: #e5585e;
+  color: #fff;
+  width: 70px;
+  height: 15px;
+  border-radius: 4px;
+  padding: 10px 25px;
+}
+
+main .current-record {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+main .current-record h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+main .current-record img {
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+main .sell-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 110px;
+}
+
+main .sell-info h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+main .sell-info img {
+  width: 80%;
+  border-radius: 40px;
+}
+
+main .sell-info p {
+  width: 80%;
+  text-align: justify;
+}
+
+main .shop-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+main .shop-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+  border-radius: 40px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+main .shop-cards .card h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 70px;
+  border-radius: 40px 40px 50% 50%;
+  text-align: center;
+}
+
+main .shop-cards .card p {
+  color: #000;
+  margin: 20px 0;
+}
+
+main .shop-cards .card .btn {
+  text-decoration: none;
+  font-size: 1.65rem;
+  background-color: #e5585e;
+  color: #fff;
+  width: 70px;
+  height: 15px;
+  border-radius: 4px;
+  padding: 10px 25px;
+  width: auto;
+  height: auto;
+  margin: 20px 0 40px 0;
+}
+
+main .shop-cards .free-panel h1 {
+  background-color: #cd5c5c;
+}
+
+main .shop-cards .bronze-panel h1 {
+  background-color: #b08d57;
+}
+
+main .shop-cards .silver-panel h1 {
+  background-color: #808080;
+}
+
+main .shop-cards .gold-panel h1 {
+  background-color: #d4af37;
+}
+
+main .shop-cards .card:hover {
+  -webkit-transform: scale(1.017);
+          transform: scale(1.017);
+}
+
+main .newsletter-enrolling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 90px;
+  position: relative;
+}
+
+main .newsletter-enrolling img {
+  width: 71%;
+  border-radius: 40px;
+}
+
+main .newsletter-enrolling a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  width: 160px;
+  height: 30px;
+  position: absolute;
+  bottom: 3.5%;
+  background-color: #fff;
+  color: #4c4c4c;
+  padding: 22px 25px;
+  border-radius: 1000px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 70px;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  border-radius: 50% 50% 0 0;
+  background-color: #f6f5f5;
+}
+
+footer .arrow-up {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+footer .arrow-up:hover {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+  cursor: pointer;
+}
+
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+footer .footer-nav a {
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+
+footer img {
+  width: 17%;
+}
+
+footer p {
+  color: #6950b8;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer p a {
+  color: blue;
+}
+
+footer p a:focus {
+  color: red;
+}
+
+@media (max-width: 1000px) {
+  header {
+    height: 80vh;
+  }
+  main .discription-component {
+    margin-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .discription-component img {
+    width: 50%;
+    margin: 50px 0;
+  }
+  main .comp--1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .current-record img {
+    width: 100%;
+  }
+  main .sell-info img {
+    width: 90%;
+  }
+  main .shop-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .newsletter-enrolling img {
+    width: 100%;
+  }
+  footer .footer-nav a {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 50%;
+  }
+  main .shop-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 530px) {
+  footer {
+    height: 40vh;
+  }
+  footer .footer-nav {
+    gap: 12px;
+  }
+  footer .footer-nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  footer .footer-nav a {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
